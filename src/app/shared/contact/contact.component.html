@@ -1,0 +1,80 @@
+<!--start contact-->
+<section class="section bg-light" id="contact">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="text-center mb-5">
+                    <h1 style="color: #e98b11; font-weight: bold;">Nous contactez </h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="contact-details mb-4 mb-lg-0">
+                    
+                    <a href="" class="mb-3"><i class="mdi mdi-phone align-middle text-muted fs-20 me-2"></i> <span
+                            class="fw-medium">+245 1234 5678</span></a>
+                    <a href="" class="mb-3"><i class="mdi mdi-facebook align-middle text-muted fs-20 me-2"></i> <span
+                        class="fw-medium">+245 1234 5678</span></a>
+                    <a href="" class="mb-3"><i class="mdi mdi-linkedin align-middle text-muted fs-20 me-2"></i> <span
+                        class="fw-medium">+245 1234 5678</span></a>         
+                    <a class="mb-3"><i class="mdi mdi-hospital-building text-muted fs-20 me-2"></i> <span
+                            class="fw-medium">9:00 AM - 6:00 PM</span></a>
+                    <a class="mb-3"><i class="mdi mdi-map-marker-outline text-muted fs-20 me-2"></i> <span
+                            class="fw-medium">412, Plantation Rd, Morehead City, NC, 28557.</span></a>
+                </div>
+                <!--end contact-details-->
+            </div>
+            <!--end col-->
+            <div class="col-lg-7">
+                <form (ngSubmit)="sendMsg()" [formGroup]="contactForm" class="contact-form">
+                    <div id="error-msg"></div>
+                  
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="position-relative mb-3">
+                          <span class="input-group-text"><i class="mdi mdi-account-outline"></i></span>
+                          <input formControlName="name" type="text" class="form-control" placeholder="Votre nom*">
+                        </div>
+                      </div>
+                  
+                      <div class="col-lg-6">
+                        <div class="position-relative mb-3">
+                          <span class="input-group-text"><i class="mdi mdi-email-outline"></i></span>
+                          <input formControlName="email" type="email" class="form-control" placeholder="Votre email*">
+                        </div>
+                      </div>
+                  
+                      <div class="col-lg-12">
+                        <div class="position-relative mb-3">
+                          <span class="input-group-text"><i class="mdi mdi-file-document-outline"></i></span>
+                          <input formControlName="subject" type="text" class="form-control" placeholder="Sujet*">
+                        </div>
+                      </div>
+                  
+                      <div class="col-lg-12">
+                        <div class="position-relative mb-3">
+                          <span class="input-group-text align-items-start"><i class="mdi mdi-comment-text-outline"></i></span>
+                          <textarea formControlName="comments" rows="4" class="form-control" placeholder="Votre message*"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <div class="row">
+                      <div class="col-sm-12 text-end">
+                        <button type="submit" class="btn btn-primary"  (click)="sendMsg()">Envoyer le message</button>
+                      </div>
+                    </div>
+                  </form>
+                  
+                
+                  
+                <!--end form-->
+            </div>
+            <!--end col-->
+        </div>
+        <!--end row-->
+    </div>
+    <!--end container-->
+</section>
+<!--end contact-->

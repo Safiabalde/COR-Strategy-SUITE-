@@ -1,0 +1,81 @@
+.carousel-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .carousel-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .image-container {
+    flex: 0 0 150px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .testimonial-img {
+    width: 300px;
+    height: 200px;
+  }
+  
+  .text-container {
+    flex: 1;
+    margin-left: 20px;
+  }
+  
+  .testimonial-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .testimonial-location {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 15px;
+  }
+  
+  .testimonial-text {
+    font-size: 16px;
+    color: #555;
+  }
+  .carousel {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .carousel-content {
+    display: flex;
+    flex-direction: row; /* Position par défaut en ligne */
+    padding: 20px; /* Espacement autour de chaque témoignage */
+  }
+  
+  .image-container {
+    flex: 0 0 auto; /* L'image a une largeur fixe */
+    margin-right: 20px; /* Espace entre l'image et le texte sur les grands écrans */
+  }
+  
+  .text-container {
+    flex: 1; /* Le texte occupe le reste de l'espace */
+  }
+  
+  /* Styles responsives */
+  @media (max-width: 768px) { /* Pour les tablettes et les téléphones */
+    .carousel-content {
+      flex-direction: column; /* Passer à une disposition verticale */
+      text-align: center; /* Centrer le texte pour une meilleure lisibilité */
+    }
+  
+    .image-container {
+      margin-right: 0; /* Supprimer l'espace à droite sur les petits écrans */
+      margin-bottom: 10px; /* Ajouter un espace en bas pour séparer l'image du texte */
+    }
+  }
+  
+  

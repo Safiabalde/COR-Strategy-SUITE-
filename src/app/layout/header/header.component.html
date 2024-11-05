@@ -1,0 +1,47 @@
+ 
+
+ 
+ <!-- START NAVBAR -->
+ <nav  id="navbar" class="navbar nav navbar-expand-lg fixed-top sticky" (window:scroll)="windoscroll()">
+    <div class="container" appScrollspy [spiedTags]="['section']" (sectionChange)="onSectionChange($event)">
+        <a class="navbar-brand" href="/"><img src="assets/images/Logo_COR_Strategy.png" alt="" width="120" height="120"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" (click)="toggleMenu()" aria-label="Toggle navigation">
+            <i class="mdi mdi-menu text-muted"></i>
+        </button>
+        <div class="collapse navbar-collapse" scrollSpy id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="navbar-navList">
+                <li class="nav-item">
+                    <a [ngxScrollTo]="'#home'" class="nav-link" [ngClass]="{'active':curentsection === 'home'}" href="javascript:void(0);">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a [ngxScrollTo]="'#sommes'" class="nav-link" [ngClass]="{'active':curentsection === 'sommes'}" href="javascript:void(0);">A propos</a>
+                </li>
+                <li class="nav-item">
+                    <a [ngxScrollTo]="'#process'" class="nav-link" [ngClass]="{'active':curentsection === 'process'}" href="javascript:void(0);"> Services</a>
+                </li>
+                <li class="nav-item">
+                    <a [ngxScrollTo]="'#client'" class="nav-link" [ngClass]="{'active':curentsection === 'client'}" href="javascript:void(0);">Réalisations</a>
+                </li>
+                <li class="nav-item">
+                    <a [ngxScrollTo]="'#contact'" class="nav-link" [ngClass]="{'active':curentsection === 'contact'}" href="javascript:void(0);">Contact</a>
+                </li>
+            </ul>
+            <!--end navbar-nav-->
+            <ul class="list-inline mb-0 ps-lg-4 ms-2">
+                <li class="list-inline-item">
+                    <a href="#" class="primary-link"><i class="mdi mdi-facebook me-1"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" class="primary-link"><i class="mdi mdi-linkedin me-1"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" class="primary-link"><i class="mdi mdi-phone"></i></a>
+                </li>
+            </ul>
+        </div>
+        <!--end collapse-->
+    </div>
+    <!--end container-->
+</nav>
+<!-- END NAVBAR -->
